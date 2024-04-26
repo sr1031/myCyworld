@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Sci Fied Bitmap";
+    src: url("https://www.mediafont.com/storage/contents/3246/scifibit.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PFStardust";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;    
+    color: #55b2d4; 
+}   
+
+.background {
+    background-image: url("../static/images/배경.png");
+    width: 1024px;
+    height: 600px;
+    padding: 40px 0px 0px 20px;
+    /* 시계방향! */
+}
+
+.outerBox {
+    width: 808px;
+    height: 544px;
+    background-image: url("../static/images/회색\ 있는\ 이미지\ png.png");
+    padding-top: 26px;
+    padding-left: 24px;
+}
+
+.wrapper {
+    width: 756px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0px 0px 8px;
+}
+
+.wrapper__left {
+    width: 208px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left__header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    font-size: 10px;
+}
+
+.today span:nth-of-type(2n + 1) {
+    font-family: "Sci Fied Bitmap";
+}
+
+.left__body {
+    width: 100%;
+    height: 100%;
+    border: 1px gray solid;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.left__body__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__gray {
+    width: 100%;
+    height: 133px;
+    background-color: #c4c4c4;
+}
+
+.header__line {
+    width: 100%;
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+    /* 상하 / 좌우 */
+}
+
+.left__body__profile {
+    width: 141px;
+    height: calc(72px + 119px);
+    font-size: 9px;
+}
+
+.left__body__profile div:nth-of-type(n + 1) {
+    margin-top: 8px;
+}
+
+.left__body__profile i {
+    color: black;
+}
+
+.left__body__profile span {
+    color: gray;
+}
+
+.left__body__footer {
+    width: 141px;
+    height: 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left__body__footer span {
+    width: 59px;
+    height: 15px;
+    font-size: 11px;
+    color: gray;
+}
+
+.left__body__footer select {
+    font-size: 11px;
+    width: 140px;
+    height: 18px;
+    color: gray;
+}
+
+.wrapper__right {
+    width: 524px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.right__header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right__header h4 {
+    margin-left: 34px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: "Malgun Gothic";
+}
+
+.right__header div {
+    width: 100px;
+    height: 25px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.right__header label {
+    line-height: 13px;
+    width: 78px;
+    height: 18px;
+    font-size: 13px;
+    font-family: "PFStardust";
+}
+
+.right__header button {
+    border: 0px;
+    padding: 0px 0px 4.5px 0px;
+    font-size: 6px;
+    font-family: "PFStardust";
+}
+
+.right__body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 10px;
+    margin-left: 3px;
+    padding: 15px 30px;
+}
+
+.right__body iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

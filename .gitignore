@@ -1,0 +1,5 @@
+/css-prectice/static/**
+.prettierrc
+/.vscode
+/css-prectice/html/boxes.html
+/css-prectice/style/boxesStyle.css
